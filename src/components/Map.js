@@ -38,7 +38,6 @@ const Map = () => {
 //*-------------------------------------------------------------------
 
   useEffect(() => {
-    
     mapboxgl.accessToken = "pk.eyJ1Ijoic2FtdWlpNzIiLCJhIjoiY2xwa2o5bDM2MDB0ejJpanYwempqdG1wciJ9.4H7rt3IlNqycyNxfqNwrSw";
     const map = new mapboxgl.Map({
       container: mapContainerRef.current,
