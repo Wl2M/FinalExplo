@@ -173,7 +173,7 @@
 }
 
 .sidenav .sidebar.visible {
-  left: 1800px; /* Move the sidebar back to its visible position */
+  left: 1630px; /* Move the sidebar back to its visible position */
   box-sizing: border-box;
   height: 100vh;
   overflow-y: auto;

@@ -29,7 +29,20 @@ const Map = () => {
     Tag: "",
     ImageIcon: ""
   });
-  
+  const handleClick = () => {
+    // ทำตามเงื่อนไขตามที่คุณต้องการ
+    if (!isSidebarVisible) {
+      console.log("Clicked: true");
+      // ทำงานที่ต้องการเมื่อคลิกครั้งแรก
+    } else {
+      console.log("Clicked: false");
+      // ทำงานที่ต้องการเมื่อคลิกครั้งถัดไป
+    }
+
+    // สลับค่าเป็นตรงข้าม
+    setSidebarVisible(!isSidebarVisible);
+  };
+
 
   
   
@@ -242,7 +255,8 @@ const Map = () => {
             <a class="active" data-page="Drink" alt="Drink" onClick={() => handleCategoryClick(['Drink'])}>  <i class="fa-solid fa-mug-saucer"></i>   <span class="nav-drink"> Drink </span></a>
             <a class="active" data-page="Dessert" alt="Dessert" onClick={() => handleCategoryClick(['Dessert','Bakery'])}>  <i class="fa-solid fa-ice-cream"></i> <span class="nav-dessert">Dessert,Bakery</span> </a>    
             <a class="active" data-page="Cafe" alt="Cafe" onClick={() => handleCategoryClick(['Cafe'])}>  <i class="fa-solid fa-mug-hot"></i> <span class="insidenav">café</span></a>
-            <span className={`sidebar ${isSidebarVisible ? 'visible' : ''}`} onMouseEnter={() => setSidebarVisible(true)} onMouseLeave={() => setSidebarVisible(false)}>
+            <a class="active" data-page="Cafe" alt="Cafe" onClick={handleClick}>  <i class="fa-solid fa-arrow-left"></i> <span class="insidenav">Show All</span></a>
+            <span className={`sidebar ${isSidebarVisible ? 'visible' : ''}`} >
             {/* Add content for the sidebar here */}
               {markerElements}
             </span>
