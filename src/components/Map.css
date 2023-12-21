@@ -1,0 +1,213 @@
+@import url('https://fonts.googleapis.com/css2?family=Pixelify+Sans&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Pixelify+Sans&family=Poppins:wght@600&display=swap');
+*{
+  padding: 0;
+  font-family: 'Poppins', sans-serif;
+  box-sizing: border-box;
+}
+
+.map-wrap {
+    position: relative;
+    width: 100%;
+    height: calc(100vh - 77px);
+  }
+
+.mapboxgl-popup-content{
+  border-radius: 20px;
+  width: 300px;
+}
+
+.popcard{
+  max-width: 500px;
+  width: 300px;
+  background-color: #fff;
+  border-radius: 20px;
+  justify-content: right;
+  margin-top: 7%;
+  padding-left: auto;
+  padding-right: auto;
+  margin-bottom: 10px;
+}
+
+.popcard-Img{
+  width: 240px;
+  display: flex;
+  border-radius: 12px;
+  margin-right: auto;
+  margin-left: auto;
+
+}
+
+.popcard-Name{
+  font-size: 20px;
+  margin-top: 10px;
+  margin-bottom: 0px;
+  color: black;
+}
+.popcard-Times{
+  font-size: 15px;
+  margin-top: 10px;
+  margin-bottom: 0px;
+  color: black;
+
+}
+.popcard-Dayoff{
+  font-size: 14px;
+  margin-top: 10px;
+  display: inline-block;
+  padding: 4px 12px; /* Increase padding on the left and right */
+  border-radius: 20px;
+  color: white;
+  background-color: #d95a5a;
+}
+
+.popcard-Category {
+  font-size: 14px;
+  margin-top: 10px;
+  margin-left: 10px;
+  display: inline-block;
+  padding: 4px 12px; /* Increase padding on the left and right */
+  border-radius: 20px;
+  color: white;
+  background-color: #323ace;
+}
+
+.popcard-Button{
+  margin: 0px;
+}
+
+.popcard-inButton{
+  border-radius: 20px;
+  width: 45%;
+  background-color: #cccccc;
+  border: none;
+  color: black;
+  margin-top: 4%;
+  font-size: 14px;
+}
+
+.popcard-BoxButton{
+  text-align: center;
+  padding-bottom: 3%;
+}
+
+.mapboxgl-popup-content{
+  padding:0px;
+  padding-bottom: 2%;
+}
+
+
+.FoodCate{
+  width: 50px;
+  padding-left: 5px;
+  padding-right: 5px;
+}
+
+.category-head{
+  display: flex;
+  justify-content: flex-end;
+  padding-left: 10px;
+  padding-right: 10px;
+  align-items: center;
+  border: 1px solid black;
+  gap: 5px;
+}
+
+.mapboxgl-popup-close-button{
+  padding-right: 5%;
+  padding-top: 1%;
+  color: #020202;
+  font-size: 20px;
+}
+
+
+
+.sidenav {
+  height: 100%;
+  width: 275px;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  left: 0;
+  background-color: #111;
+  padding-top: 25px;
+  text-align: left;
+}
+
+.sidenav a {
+  padding: 6px 8px 6px 16px;
+  text-decoration: none;
+  font-size: 20px;
+  color: #818181;
+  display: block;
+  margin-top: 1%;
+}
+
+.sidenav a:hover {
+  color: #ffffff;
+  background-color: #323ace;
+  touch-action: manipulation;
+}
+
+.main {
+  margin-left: 160px; /* Same as the width of the sidenav */
+  font-size: 20px; /* Increased text to enable scrolling */
+  padding: 0px 10px;
+}
+
+
+.sidenav .sidebar {
+  position: absolute;
+  /*left: -225px; /* Set the initial position off-screen */
+  top: 300px;
+  max-width: 275px ;
+  height: 100vh;
+  background-color: #fff;
+  transition: left 0.3s ease; /* Add a smooth transition effect */
+  border: 1px solid black;
+  z-index: 999999;
+  box-sizing: border-box;
+  overflow-y: auto;
+  overflow-x: hidden;
+  text-align: center;
+}
+
+.sidenav .sidebar.visible {
+  left: 0; /* Move the sidebar back to its visible position */
+  box-sizing: border-box;
+  height: 100vh;
+  overflow-y: auto;
+  overflow-x: hidden;
+}
+button, input, optgroup, select, textarea{
+  font-size: 15px;
+}
+
+
+
+
+@media screen and (max-height: 450px) {
+  .sidenav {padding-top: 15px;}
+  .sidenav a {font-size: 18px;}
+}
+
+.insidenav{
+  margin-left: 1rem;
+}
+
+.sidenav i{
+  margin-left: 9%;
+}
+
+.nav-drink{
+  margin-left: 0.7rem;
+}
+
+.nav-dessert{
+  margin-left: 1.1rem;
+}
+
+.nav-LaiRarn{
+  margin-left: 25%;
+  color: white;
+}

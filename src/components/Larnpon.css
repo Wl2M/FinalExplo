@@ -1,0 +1,116 @@
+@import url('https://fonts.googleapis.com/css2?family=Pixelify+Sans&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Pixelify+Sans&family=Poppins:wght@600&display=swap');
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+*{
+    font-family: 'Poppins', sans-serif;
+
+}
+
+.card{
+    width: 75%;
+    margin: auto;
+    box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+    transition: transform 0.3s ease-in-out;
+}
+
+.card:hover{
+    box-shadow: 0 7px 10px rgba(0,0,0,0.1);
+    transform: scale(1.05);
+}
+
+.incard{
+    margin-top: -5rem;
+}
+
+.ttime{
+    font-size: 32px;
+    margin-top: 1%;
+}
+
+
+.tdayoff{
+    border-radius: 20px;
+    color: white;
+    padding: 4px 12px; /* Increase padding on the left and right */
+}
+
+.ttag{
+    color: white;
+    padding: 4px 12px; /* Increase padding on the left and right */
+    margin-left: 2%;
+}
+
+.cards {
+    width: 330px;
+    height: 310px;
+    background-color: #BBAB8C;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    border-radius: 20px;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    padding-left: 20px;
+    padding-right: 20px;
+    padding-bottom: 20px;
+    margin-left: 10%;
+    box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+    transition: transform 0.3s ease-in-out;
+}
+
+.cards:hover{
+    box-shadow: 0 7px 10px rgba(0,0,0,0.1);
+    transform: scale(1.05);
+}
+
+.cards img {
+    width: 100%;
+    height: 70%;
+    margin-top: 7%;
+    object-fit: cover;
+    border-radius: 20px;
+}
+
+.cards .title {
+    font-size: 22px;
+    font-weight: bold;
+    color: #000000;
+    margin-top: auto;
+}
+
+
+/* Each card */
+.p-4 {
+    flex-basis: calc(25% - 1rem); /* Adjust the width of each card */
+    /* You may need to adjust the width percentage to fit the cards properly */
+    /* Other existing styling */
+}
+
+/* Display the first four cards in a single row */
+@media screen and (min-width: 768px) {
+    /* Target the first four cards */
+    .p-4:nth-child(-n+4) {
+        flex-basis: calc(25% - 1rem); /* Adjust the width of each card */
+        /* Maintain the width of each card */
+    }
+
+    /* Force the rest of the cards to a new line */
+    
+}
+.home{
+    width: 60px;
+  height: 60px;
+  border: 1px solid #000000;
+  border-radius: 20px;
+  margin: 10px;
+  padding: 10px;
+  max-width: 750px;
+  box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+  transition: transform 0.3s ease-in-out;
+}
+
+.home:hover {
+    box-shadow: 0 7px 10px rgba(0,0,0,0.1);
+    transform: scale(1.05);
+  }

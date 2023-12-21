@@ -1,0 +1,83 @@
+.popcard-box-item{
+  text-align: center;
+  justify-content: center;
+  display: flex;
+}
+
+
+
+.popcard-Item{
+  max-width: 500px;
+  width: 300px;
+  background-color: #fff;
+  border-radius: 20px;
+  margin-top: 7%;
+  padding-left: 1%;
+  padding-right: 1%;
+}
+
+.popcard-Img-Item{
+  width: 240px;
+  display: flex;
+  border-radius: 12px;
+  margin-left: 10px;
+
+}
+
+.popcard-Name-Item{
+  font-size: 20px;
+  margin-top: 10px;
+  margin-bottom: 0px;
+  color: black;
+}
+.popcard-Times-Item{
+  font-size: 15px;
+  margin-top: 10px;
+  margin-bottom: 0px;
+  color: black;
+
+}
+.popcard-Dayoff-Item{
+  font-size: 14px;
+  margin-top: 10px;
+  display: inline-block;
+  padding: 4px 12px; /* Increase padding on the left and right */
+  border-radius: 20px;
+  color: white;
+  background-color: #d95a5a;
+}
+
+.popcard-Category-Item{
+  font-size: 14px;
+  margin-top: 10px;
+  margin-left: 10px;
+  display: inline-block;
+  padding: 4px 12px; /* Increase padding on the left and right */
+  border-radius: 20px;
+  color: white;
+  background-color: #323ace;
+}
+
+.popcard-Button-Item{
+  margin: 0px;
+}
+
+.popcard-inButton{
+  border-radius: 20px;
+  width: 45%;
+  background-color: #cccccc;
+  border: none;
+  color: black;
+  margin-top: 4%;
+  font-size: 14px;
+}
+
+.popcard-BoxButton{
+  text-align: center;
+  padding-bottom: 3%;
+}
+
+.mapboxgl-popup-content{
+  padding:0px;
+  padding-bottom: 2%;
+}
