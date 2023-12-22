@@ -164,8 +164,8 @@
   height: 100vh;
   background-color: #fff;
   transition: left 0.3s ease; /* Add a smooth transition effect */
-  
-  z-index: 999999;
+  transform: translateX(-100%);
+  transition: transform 0.3s ease;
   box-sizing: border-box;
   overflow-y: auto;
   overflow-x: hidden;
@@ -173,7 +173,7 @@
 }
 
 .sidenav .sidebar.visible {
-  left: 1630px; /* Move the sidebar back to its visible position */
+  left: 200%; /* Move the sidebar back to its visible position */
   box-sizing: border-box;
   height: 100vh;
   overflow-y: auto;
